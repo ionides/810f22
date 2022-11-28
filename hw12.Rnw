@@ -45,7 +45,7 @@ Now, in an R session running in the \texttt{bagged\_filters} directory, you can 
 library(knitr)
 knit("ms.Rnw")
 @
-If all is well, this will generate a file \texttt{ms.tex} which can be used to produce \texttt{ms.pdf} by running pdflatex. Likely, issues will arise that need to be solved to get this working. Spend a reasonable amount of time trying to get this working. It is okay if you cannot get the code to run, since the subsequent questions can be answered without this. Report on whether you were successful, what problems you overcame, and where you got stuck.
+If all is well, this will generate a file \texttt{ms.tex} which can be used to produce \texttt{ms.pdf} by running pdflatex. Likely, issues will arise that need to be solved to get this working. Spend a reasonable amount of time trying to get this working. Some debugging advice is posted on the class website at \texttt{hw12supp.html}. It is okay if you cannot get the code to run, since the subsequent questions can be answered without this. Report on whether you were successful, what problems you overcame, and where you got stuck.
 
 YOUR ANSWER HERE.
 
@@ -53,8 +53,12 @@ YOUR ANSWER HERE.
 <<,eval=FALSE>>=
 make ms.pdf
 @
-at a terminal prompt to build ms.pdf from ms.Rnw. This just runs \texttt{knit} followed by \texttt{pdflatex} so it cannot work unless the separate steps are working. For debugging, it can be better to run \texttt{knit} and \texttt{pdflatex} sequentially.
-
+at a terminal prompt to build ms.pdf from ms.Rnw. This just runs \texttt{knit} followed by \texttt{pdflatex} so it cannot work unless the separate steps are working. For debugging, it can be better to run \texttt{knit} and \texttt{pdflatex} sequentially. Other things to experiment with if you are new to make:
+<<,eval=FALSE>>=
+make -n ms.pdf
+make -B ms.pdf
+make -nB ms.pdf
+@
 Try this, and report briefly
 
 YOUR ANSWER HERE.

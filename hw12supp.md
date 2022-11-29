@@ -5,9 +5,14 @@
 * You can copy missing `sty` files into your working directory from the internet
 .
 
-* Better, you can get a more complete LaTeX distribution. If you install `Xcode`, `Xcode command line first`, and `MacPorts` (all of which are good to have for scientific computing) you can open a terminal and run
+* Better, you can get a more complete Latex distribution. If you install `Xcode`, `Xcode command line first`, and `MacPorts` (all of which are good to have for scientific computing) you can open a terminal and run
 ```
 sudo port install texlive-latex-extra
+```
+
+* If you do not have Latex on your laptop, and it is a UM laptop, you can install MacTex via the Managed Software Center. Once this is installed, and your machine is restarted, then you can check that `pdflatex` is on the search path by typing in a terminal
+```
+which pdflatex
 ```
 
 ## If you have problems running the code in Rstudio
